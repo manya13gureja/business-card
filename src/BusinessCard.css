@@ -1,0 +1,109 @@
+.business-card-3d {
+  width: 420px;
+  background: #181c20;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 1.5px 4px rgba(0,0,0,0.15);
+  overflow: hidden;
+  font-family: 'Fira Mono', 'Menlo', 'SF Mono', 'Consolas', monospace;
+  transition: transform 0.2s cubic-bezier(.25,.8,.25,1), box-shadow 0.2s;
+  will-change: transform;
+  user-select: none;
+}
+.business-card-3d:hover {
+  box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.45), 0 3px 8px rgba(0,0,0,0.18);
+}
+.window-bar {
+  display: flex;
+  align-items: center;
+  background: #23272e;
+  height: 44px;
+  padding: 0 18px;
+  position: relative;
+}
+.window-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 7px;
+  display: inline-block;
+}
+.window-dot.red { background: #ff5f56; }
+.window-dot.yellow { background: #ffbd2e; }
+.window-dot.green { background: #27c93f; }
+.window-title {
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-left: 18px;
+  flex: 1;
+  letter-spacing: 0.01em;
+}
+.window-actions {
+  display: flex;
+  gap: 8px;
+}
+.download-btn, .code-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+.download-btn:hover {
+  background: #2d7d46;
+  color: #fff;
+}
+.code-btn:hover {
+  background: #23272e;
+  color: #ffbd2e;
+}
+.code-area {
+  background: #181c20;
+  padding: 18px 24px 18px 24px;
+  font-size: 1.18rem;
+  color: #f8f8f2;
+  min-height: 210px;
+  border-radius: 0 0 18px 18px;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+.code-area pre {
+  margin: 0;
+  color: #f8f8f2;
+  font-family: inherit;
+  font-size: 1.18rem;
+  line-height: 1.7;
+}
+.code-area .string { color: #ffd580; }
+.code-area .key { color: #ff8b8b; }
+
+@media (max-width: 500px) {
+  .business-card-3d {
+    width: 98vw;
+    min-width: 0;
+  }
+  .code-area {
+    padding: 12px 6vw;
+  }
+}
+
+.email-link {
+  color: #ffd580;
+  text-decoration: none;
+  transition: color 0.15s, text-decoration 0.15s;
+  font-family: inherit;
+  font-size: 1.18rem;
+  word-break: break-all;
+}
+.email-link:hover, .email-link:focus {
+  color: #fff;
+  text-decoration: underline;
+  outline: none;
+} 
