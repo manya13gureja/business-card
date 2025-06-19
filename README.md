@@ -2,7 +2,7 @@
 
 A pixel-perfect, interactive, 3D business card built with React and Vite. Features a subtle 3D tilt effect, clickable download button for your resume, a code button linking to the project repository, and a mailto link for direct contact.
 
-![screenshot](./livepreview.png) <!-- Add a screenshot if you have one -->
+![screenshot](./bsncard-3d/public/livepreview.png) <!-- Add a screenshot if you have one -->
 
 ## Features
 - **3D Tilt Effect:** Subtle 3D tilt on mouse movement for a modern, interactive feel.
