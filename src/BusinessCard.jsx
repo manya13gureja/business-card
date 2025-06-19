@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import './BusinessCard.css';
 
-const GITHUB_URL = 'https://github.com/your-placeholder-repo';
-const RESUME_URL = '/resume.pdf';
-const EMAIL = 'my@email.com';
+const GITHUB_URL = 'https://github.com/manya13gureja/business-card.git';
+const RESUME_URL = '/CV.pdf';
+const EMAIL = 'manyaagureja13@gmail.com';
 
 const BusinessCard = () => {
   const cardRef = useRef(null);
@@ -60,20 +60,22 @@ const BusinessCard = () => {
         </div>
       </div>
       <div className="code-area">
-        <pre>{`{
-  "name": "@fr0gger_",
-  "title": "Malware Therapist",
-  "email": "`}</pre>
+        <pre style={{ display: 'inline', margin: 0 }}>{`{\n  "name": "Manya Gureja",\n  "title": "Creative Technologist",\n  "email": "`}</pre>
         <a
-          href={`mailto:${EMAIL}`}
+          href="mailto:manyaagureja13@gmail.com"
           className="email-link"
-          style={{ color: '#ffd580', textDecoration: 'none', fontFamily: 'inherit', fontSize: '1.18rem' }}
+          style={{
+            color: '#ffd580',
+            textDecoration: 'none',
+            fontFamily: 'inherit',
+            fontSize: '1.18rem',
+            whiteSpace: 'pre',
+            display: 'inline'
+          }}
         >
-          {EMAIL}
+          manyaagureja13@gmail.com
         </a>
-        <pre>{`",
-  "link": "securitybreak.io"
-}`}</pre>
+        <pre style={{ display: 'inline', margin: 0 }}>{`",\n  "portfolio": "manyaagureja.com"\n}`}</pre>
       </div>
     </div>
   );

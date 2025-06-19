@@ -1,16 +1,44 @@
- HEAD
-# business-card
+# 3D Interactive Business Card
 
-# React + Vite
+A pixel-perfect, interactive, 3D business card built with React and Vite. Features a subtle 3D tilt effect, clickable download button for your resume, a code button linking to the project repository, and a mailto link for direct contact.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![screenshot](./livepreview.png) <!-- Add a screenshot if you have one -->
 
-Currently, two official plugins are available:
+## Features
+- **3D Tilt Effect:** Subtle 3D tilt on mouse movement for a modern, interactive feel.
+- **Download Resume:** Click the download button to get the attached resume PDF.
+- **View Code:** Click the `{}` button to open the project's GitHub repository.
+- **Clickable Email:** Email address is a mailto link for instant contact.
+- **Pixel-Perfect UI:** Replicates a code editor window with window controls and code-like styling.
+- **Responsive:** Looks great on desktop and mobile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v18 or newer recommended)
+- npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-18aa7e3 (inital commit)
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/manya13gureja/business-card.git
+cd business-card
+
+# Install dependencies
+npm install
+```
+
+### Running Locally
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+
+## Customization
+- Replace `resume.pdf` in the `public` folder with your own resume.
+- Update the email, name, title, and links in `src/BusinessCard.jsx`.
+
+---
+
+Feel free to fork, customize, and use this as your own digital business card!
